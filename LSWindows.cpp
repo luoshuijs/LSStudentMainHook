@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "LSWindows.h"
 
-BOOL CloseWindowBan(HWND hWnd, BOOL bBan) {
+BOOL BanCloseWindow(HWND hWnd, BOOL bBan) {
 	HMENU hMenu = GetSystemMenu(hWnd, FALSE);
 	if (hMenu == FALSE)
 	{

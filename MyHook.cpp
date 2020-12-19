@@ -35,7 +35,7 @@ HWND MyCreateWindowExW(
 			//常量 WS_THICKFRAME , 有可调边框(与WS_SIZEBOX样式相同)
 			//常量 WS_CAPTION, 有标题框和边框(和WS_TILED样式相同)
 			HWND hWnd = OldCreateWindowExW(dwExStyle, lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
-			CloseWindowBan(hWnd, TRUE);//禁止窗口CLOASE，防止出事
+			BanCloseWindow(hWnd, TRUE);//禁止窗口CLOASE，防止出事
 			return hWnd;
 		}
 
